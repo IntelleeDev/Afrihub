@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mikeoye.afrihub.WelcomeActivity">
+
+    <!-- Hero Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hero"/>
+
+    <LinearLayout
+        android:paddingTop="@dimen/activity_top_margin_50"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center">
+
+        <ImageView
+            android:layout_width="@dimen/brand_logo_width"
+            android:layout_height="@dimen/brand_logo_height"
+            android:src="@drawable/frihub_logo"/>
+
+        <TextView
+            android:text="Student companion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/WelcomeScreenTextThemeSmall" />
+
+        <TextView
+            android:layout_marginTop="55dp"
+            android:text="@string/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/WelcomeScreenTextThemeMedium"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="@string/welcome_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/WelcomeScreenTextThemeSmall"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/sign_in_button_welcome"
+            android:text="Sign in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons_shape"
+            style="@style/WelcomeScreenButtons" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="0dp"/>
+
+        <Button
+            android:id="@+id/sign_up_button_welcome"
+            android:text="Sign up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons_shape"
+            style="@style/WelcomeScreenButtons" />
+
+    </LinearLayout>
+
+</FrameLayout>

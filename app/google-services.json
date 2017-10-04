@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "114877851234",
+    "firebase_url": "https://trakit-b0464.firebaseio.com",
+    "project_id": "trakit-b0464",
+    "storage_bucket": "trakit-b0464.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114877851234:android:8e490bb712dd10b6",
+        "android_client_info": {
+          "package_name": "com.mikeoye.afrihub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114877851234-aivkucqp2pvs2aqlmp122j35hegph4pg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mikeoye.afrihub",
+            "certificate_hash": "61da5c6e9da61929a3a87edf27d7c6752189075e"
+          }
+        },
+        {
+          "client_id": "114877851234-2bqt57josog0r2kl19i1bnum9i8to858.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACIW9eode_apf866wahzC4VDzGwadqUIY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114877851234-2bqt57josog0r2kl19i1bnum9i8to858.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

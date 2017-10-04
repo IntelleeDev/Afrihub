@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#22b24c</color>
+    <color name="colorPrimaryDark">#148033</color>
+    <color name="colorAccent">#f9c618</color>
+
+    <color name="profileImageColor">#eeeeee</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="error_color">#f50313</color>
+
+    <color name="text_color_alpha">#000000</color>
+    <color name="activity_background">#ededed</color>
+
+    <color name="tab_icon_selected">@color/colorPrimary</color>
+    <color name="tab_icon_inactive">#f9bfbebe</color>
+
+</resources>

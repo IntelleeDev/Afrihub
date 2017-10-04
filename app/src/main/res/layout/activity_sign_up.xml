@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    tools:context="com.mikeoye.afrihub.SignUpActivity">
+
+    <!-- Hero image -->
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:src="@drawable/hero2"
+        android:scaleType="centerCrop"/>
+
+
+    <LinearLayout
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/sign_up_button"
+                android:text="@string/signup_button_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                style="@style/CustomButton"
+                android:background="@drawable/buttons_shape" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:isScrollContainer="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/sign_in_activity_margin"
+            android:paddingRight="@dimen/sign_in_activity_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="@string/create_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimary"
+                style="@style/WelcomeScreenTextThemeMedium"
+                android:layout_marginStart="@dimen/activity_horizontal_margin" />
+
+            <GridLayout
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/ic_perm_identity_black_24dp"/>
+
+                <EditText
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:id="@+id/stud_fullname"
+                    android:hint="@string/fullname_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    style="@style/InputFieldsTheme" />
+
+                <View
+                    android:background="#fff"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+                <ImageView
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/ic_payment_black_24dp"/>
+
+                <EditText
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:id="@+id/stud_id"
+                    android:hint="@string/username_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    style="@style/InputFieldsTheme"/>
+
+                <View
+                    android:background="#fff"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+                <ImageView
+                    android:layout_row="4"
+                    android:layout_column="0"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/ic_mail_black_24dp"/>
+
+                <EditText
+                    android:layout_row="4"
+                    android:layout_column="1"
+                    android:id="@+id/email_address"
+                    android:hint="@string/email_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    style="@style/InputFieldsTheme"/>
+
+                <View
+                    android:background="#fff"
+                    android:layout_row="5"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+                <ImageView
+                    android:layout_row="6"
+                    android:layout_column="0"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/ic_vpn_key_black_24dp"/>
+
+                <EditText
+                    android:layout_row="6"
+                    android:layout_column="1"
+                    android:id="@+id/password"
+                    android:hint="@string/password_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    style="@style/InputFieldsTheme"/>
+
+                <View
+                    android:background="#fff"
+                    android:layout_row="7"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+                <ImageView
+                    android:layout_row="8"
+                    android:layout_column="0"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/ic_vpn_key_black_24dp"/>
+
+                <EditText
+                    android:layout_row="8"
+                    android:layout_column="1"
+                    android:id="@+id/conf_password"
+                    android:hint="@string/confirm_password_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    style="@style/InputFieldsTheme"/>
+
+                <View
+                    android:background="#fff"
+                    android:layout_row="9"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyle"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center"/>
+
+    <include layout="@layout/transparent_tool_bar"/>
+
+</FrameLayout>
